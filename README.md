@@ -19,8 +19,8 @@ AIF = Argument Interchange Format
 * MAC/FAC approach
 
 ---
-### Bergmann paper
-Create a case base containing graphs and then use it. Retrieve relevant text using graph similarity
+<!-- ### Bergmann paper
+Create a case base containing graphs and then use it. Retrieve relevant text using graph similarity -->
 
 ---
 ### Tasks Idea:
