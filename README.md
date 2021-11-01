@@ -62,3 +62,15 @@ Whenever we perform a query a **MAC/FAC** approach is used:
 * Correctness (CR): measures concordance/discordance of the ordering of those pairs 
 
 ---
+
+### Questions
+My understanding of the task is:
+* ingest data creating the graph structure
+* data does not contain embeddings -> "enrich" the arg graph with the "new varialbe(s)" "embedding" 
+* research on possible similarity measures (given the results from Lenz)
+* use the A* alg to find the best document to retrieve given the previously defined sim measure
+* quality assessment
+1. Are the data in the form of IFA graphs? Or do I have to create graphs from text? 
+2. g2t: we want to create a text out of a single argument graph?
+
+
