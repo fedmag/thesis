@@ -26,9 +26,29 @@ Create a case base containing graphs and then use it. Retrieve relevant text usi
 ### Tasks Idea:
 The idea is to find a faster and (hopefully) equally capable alternative to a structural retrieval (i.e., creating a mapping between a query and a case).
 
-1.  literature research for word/sentence embeddings that are either of high quality or fast to compute. [Sentence embeddings repo](https://separius.github.io/awesome-sentence-embedding/).
-2. literature research for similarity methods that can be applied to these embeddings (apart from the cosine similarity)
+1.  literature research for word/sentence embeddings that are either of high quality or fast to compute. \
+[Transformers](https://towardsdatascience.com/transformers-89034557de14): 
+    * [Repo](https://github.com/huggingface/transformers)
+    * [Explenation](https://www.pinecone.io/learn/sentence-embeddings/)
+    * [Sentence-transformers](https://github.com/UKPLab/sentence-transformers):
+
+
+Sentence embeddings repos:
+* https://separius.github.io/awesome-sentence-embedding/
+* https://www.sbert.net/docs/pretrained_models.html
+    1. fast:
+        * Smooth Inverse Frequency [SIF](https://towardsdatascience.com/fse-2b1ffa791cf9)
+        * [mini-mpnet](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
+        * [Fast sentence embeddings](https://github.com/oborchers/Fast_Sentence_Embeddings)(Gensim)
+    2. precise:
+        * [all-mpnet](https://huggingface.co/sentence-transformers/all-mpnet-base-v2)
+
+2. literature research for similarity methods that can be applied to these embeddings (apart from the cosine similarity). [Comparison](http://nlp.town/blog/sentence-similarity/).\
+Candidates:
+    * [Sentence Mover's similarity](https://homes.cs.washington.edu/~nasmith/papers/clark+celikyilmaz+smith.acl19.pdf)
+    * 
 3. research graph-to-text generation to create a purely text-based representation of the argument graphs
+    * GPT-3
 4. perform a retrieval using the three techniques mentioned above
 
 ---
