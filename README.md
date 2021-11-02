@@ -19,10 +19,6 @@ AIF = Argument Interchange Format
 * MAC/FAC approach
 
 ---
-<!-- ### Bergmann paper
-Create a case base containing graphs and then use it. Retrieve relevant text using graph similarity -->
-
----
 ### Tasks Idea:
 The idea is to find a faster and (hopefully) equally capable alternative to a structural retrieval (i.e., creating a mapping between a query and a case).
 
@@ -33,22 +29,24 @@ The idea is to find a faster and (hopefully) equally capable alternative to a st
     * [Sentence-transformers](https://github.com/UKPLab/sentence-transformers):
 
 
-Sentence embeddings repos:
-* https://separius.github.io/awesome-sentence-embedding/
-* https://www.sbert.net/docs/pretrained_models.html
-    1. fast:
-        * Smooth Inverse Frequency [SIF](https://towardsdatascience.com/fse-2b1ffa791cf9)
-        * [mini-mpnet](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
-        * [Fast sentence embeddings](https://github.com/oborchers/Fast_Sentence_Embeddings)(Gensim)
-    2. precise:
-        * [all-mpnet](https://huggingface.co/sentence-transformers/all-mpnet-base-v2)
+    Sentence embeddings repos:
+    * https://separius.github.io/awesome-sentence-embedding/
+    * https://www.sbert.net/docs/pretrained_models.html
+        1. fast:
+            * Smooth Inverse Frequency [SIF](https://towardsdatascience.com/fse-2b1ffa791cf9)
+            * [mini-mpnet](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
+            * [Fast sentence embeddings](https://github.com/oborchers/Fast_Sentence_Embeddings)(Gensim)
+            * Elmo would allow easier transiction to sms
+        2. precise:
+            * [all-mpnet](https://huggingface.co/sentence-transformers/all-mpnet-base-v2)
 
 2. literature research for similarity methods that can be applied to these embeddings (apart from the cosine similarity). [Comparison](http://nlp.town/blog/sentence-similarity/).\
 Candidates:
     * [Sentence Mover's similarity](https://homes.cs.washington.edu/~nasmith/papers/clark+celikyilmaz+smith.acl19.pdf) \
-    [Code](https://github.com/eaclark07/sms):
-        * [Word Mover’s Distance for Text Similarity](https://www.datastunt.com/post/word-mover-s-distance-for-text-similarity)
-        * [Paper](http://www.cs.cornell.edu/~kilian/papers/wmd_metric.pdf)
+    [Paper](https://homes.cs.washington.edu/~nasmith/papers/clark+celikyilmaz+smith.acl19.pdf)\
+    [Code](https://github.com/eaclark07/sms) -> needs adaption to be used (only Elmo and glove available):
+        * [Word Mover’s Distance for Text Similarity](https://www.datastunt.com/post/word-mover-s-distance-for-text-similarity):
+            * [Paper](http://www.cs.cornell.edu/~kilian/papers/wmd_metric.pdf)
     * [17 types of similarity and dissimilarity measures used in data science.](https://towardsdatascience.com/17-types-of-similarity-and-dissimilarity-measures-used-in-data-science-3eb914d2681)
 3. research graph-to-text generation to create a purely text-based representation of the argument graphs
     * GPT-3
