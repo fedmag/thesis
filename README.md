@@ -45,8 +45,11 @@ Sentence embeddings repos:
 
 2. literature research for similarity methods that can be applied to these embeddings (apart from the cosine similarity). [Comparison](http://nlp.town/blog/sentence-similarity/).\
 Candidates:
-    * [Sentence Mover's similarity](https://homes.cs.washington.edu/~nasmith/papers/clark+celikyilmaz+smith.acl19.pdf)
-    * 
+    * [Sentence Mover's similarity](https://homes.cs.washington.edu/~nasmith/papers/clark+celikyilmaz+smith.acl19.pdf) \
+    [Code](https://github.com/eaclark07/sms):
+        * [Word Mover’s Distance for Text Similarity](https://www.datastunt.com/post/word-mover-s-distance-for-text-similarity)
+        * [Paper](http://www.cs.cornell.edu/~kilian/papers/wmd_metric.pdf)
+    * [17 types of similarity and dissimilarity measures used in data science.](https://towardsdatascience.com/17-types-of-similarity-and-dissimilarity-measures-used-in-data-science-3eb914d2681)
 3. research graph-to-text generation to create a purely text-based representation of the argument graphs
     * GPT-3
 4. perform a retrieval using the three techniques mentioned above
@@ -92,5 +95,6 @@ My understanding of the task is:
 * quality assessment
 1. Are the data in the form of IFA graphs? Or do I have to create graphs from text? 
 2. g2t: we want to create a text out of a single argument graph?
+3. the word mover's distance requires word embeddings -> 
 
 
